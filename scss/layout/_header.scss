@@ -5,10 +5,14 @@
     border: 1px solid rgba(195, 212, 233, 0.4);
 
     .header-logo{
-        color: $primary-500;
-        font-size: 32px;
-        line-height: 48px;
-        font-weight: 700;
+        & h1 a{
+            color: $primary-500;
+            font-size: 32px;
+            line-height: 48px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+        }
     }
 
     .header-search{
@@ -17,10 +21,9 @@
         & form{
             display: flex;
             gap: 20px;
-            width: 50%;
             border: 1px solid rgba(195, 212, 233, 0.4);
             border-radius: 70px;
-            padding: 10px;
+            padding: 10px 20px;
 
             .header-search-icon{
                 width: 24px;
@@ -43,6 +46,10 @@
                 }
             }
         }
+
+        & .filterBtn-mobile{
+            display: none;
+        }
     }
 
     .header-action{
@@ -58,7 +65,6 @@
             padding: 10px;
 
             & img{
-                fill: red;
                 width: 24px;
             }
         }
@@ -82,5 +88,51 @@
                 width: 100%;
             }
         }
+    }
+}
+
+@media (max-width:768px)  {
+    .slider-icon{
+        display: none;
+    }
+    .action-icon{
+        display: none;
+    }
+    .action-account{
+        display: block;
+        width: 24px;
+    }
+    .header-form{
+        border-radius: 10px;
+    }
+
+    .filterBtn-mobile{
+        display: inline-block !important;
+        border: 1px solid rgba(195, 212, 233, 0.4);
+        border-radius: 10px;
+        padding: 10px;
+
+        & img{
+            width: 24px;
+        }
+    }
+    .header-search{
+        display: flex;
+        gap: 16px;
+    }
+    .header-logo{
+        & h1 a{
+            font-size: 24px;
+            line-height: 28.8px;
+        }
+    }
+}
+
+@media (max-width:768px){
+    .header-search{
+        display: none;
+    }
+    .header{
+        padding: 10px;
     }
 }
