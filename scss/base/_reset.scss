@@ -1,0 +1,14 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+}
+body{
+    line-height: 1.5;
+    -webkit-font-smoothing:antialaised;
+}
+img,picture,video,canvas,svg{
+    display: block;
+    max-width: 100%;
+}
