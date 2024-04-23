@@ -179,7 +179,7 @@ img, picture, video, canvas, svg {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .slider-icon {
     display: none;
   }
@@ -211,7 +211,7 @@ img, picture, video, canvas, svg {
     line-height: 28.8px;
   }
 }
-@media (max-width: 376px) {
+@media screen and (max-width: 376px) {
   .header-search {
     display: none;
   }
@@ -303,14 +303,13 @@ img, picture, video, canvas, svg {
   color: #1a202c;
 }
 
-@media (max-width: 768px) {
-  .footer-top-right {
-    display: flex;
+@media screen and (max-width: 768px) {
+  .footer .footer-top .footer-top-right {
     margin-top: 48px;
-    justify-content: safe;
+    justify-content: flex-start;
   }
 }
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   .footer {
     padding: 24px 24px 0 24px;
   }

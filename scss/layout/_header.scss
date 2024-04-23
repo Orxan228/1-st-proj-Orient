@@ -91,7 +91,7 @@
     }
 }
 
-@media (max-width:768px)  {
+@media screen and (max-width:768px)  {
     .slider-icon{
         display: none;
     }
@@ -128,7 +128,7 @@
     }
 }
 
-@media (max-width: 376px){
+@media screen and (max-width: 376px){
     .header-search{
         display: none;
     }
