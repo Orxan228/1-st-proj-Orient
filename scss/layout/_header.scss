@@ -5,7 +5,6 @@
     &-desktop{
         display: flex;
         align-items: center;
-        margin-bottom: 32px;
     
         .header-logo {
             & h1 a {
@@ -95,6 +94,7 @@
         display: none;
         align-items: center;
         justify-content: space-between;
+        margin-top: 32px;
         .header-search-mobile{
             width: 90%;
         }

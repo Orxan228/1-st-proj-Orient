@@ -11,7 +11,6 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialaised;
   font-family: "Dosis", sans-serif;
-  background-color: #F6F7F9;
 }
 
 img, picture, video, canvas, svg {
@@ -128,7 +127,6 @@ img, picture, video, canvas, svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 32px;
 }
 
 .header-desktop .header-logo h1 a {
@@ -249,6 +247,7 @@ img, picture, video, canvas, svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 32px;
 }
 
 .header-mobile .header-search-mobile {
@@ -523,5 +522,30 @@ img, picture, video, canvas, svg {
     font-size: 12px;
     line-height: 15px;
   }
+}
+
+main {
+  background-color: #F6F7F9;
+  padding: 0 64px;
+}
+
+.more-btn {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.more-link {
+  color: #90A3BF;
+  font-size: 14px;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
