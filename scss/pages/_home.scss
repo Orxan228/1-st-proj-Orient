@@ -1,6 +1,120 @@
 main{
     background-color: #F6F7F9;
-    padding: 0 64px;
+    padding: 32px 64px;
+}
+
+.main-add-top{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.add-card{
+    flex: 1;
+    border: 1px solid black;
+    padding: 24px;
+    color: white;
+    border-radius: 10px;
+}
+
+.add-top-left{
+    background-color: rgb(116, 198, 225);
+}
+.add-top-right{
+    background-color: blue;
+}
+.add-card-txt{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-direction: column;
+}
+.add-card-title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+}
+.add-card-info{
+    font-size: 16px;
+    line-height: 24px;
+}
+.add-card-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-img{
+    width: 50%;
+}
+
+.popular-top{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.popular-title{
+    color: $secondary-300;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.popular-more a{
+    text-decoration: none;
+    color: $primary-500;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.popular-bottom{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.popular-card{
+    width: 22%;
+    padding: 24px;
+    background-color: $white;
+    border-radius: 10px;
+}
+
+.popular-card-top{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.popular-card-top-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.car-name{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $secondary-500;
+}
+.car-type{
+    color: $secondary-300;
+    font-weight: 700;
+    font-size: 14px;
+}
+.popular-card-top-wishBtn{
+    background-color: transparent;
+    border: none;
+}
+
+.popular-card-img{
+    padding: 70px 25px;
 }
 
 .more-btn{
@@ -11,7 +125,6 @@ main{
     display: flex;
     align-items: center;
 }
-
 .more-link{
     color: #90A3BF;
     font-size: 14px;
