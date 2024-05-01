@@ -1,12 +1,13 @@
 main{
     background-color: #F6F7F9;
-    padding: 32px 64px;
+    padding: 32px 64px 0px;
 }
 
 .main-add-top{
     display: flex;
     align-items: center;
     gap: 32px;
+    flex-wrap: wrap;
 }
 .add-card{
     flex: 1;
@@ -72,13 +73,13 @@ main{
 
 .popular-bottom{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 20px;
 }
 
 .popular-card{
-    width: 22%;
+    flex: 1 0 calc(25% - 20px); 
+    max-width: calc(25% - 20px);
     padding: 24px;
     background-color: $white;
     border-radius: 10px;
@@ -111,12 +112,106 @@ main{
 .popular-card-top-wishBtn{
     background-color: transparent;
     border: none;
+    color: $secondary-300;
+
+    & .fa-heart{
+        font-size: 24px;
+    }
 }
 
 .popular-card-img{
     padding: 70px 25px;
 }
+.car-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.car-info-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: $secondary-300;
+}
 
+.car-price{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 20px;
+    & span{
+        color: $secondary-300;
+    }
+}
+.recommendation-top{
+    padding: 32px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.recommendation-title{
+    color: $secondary-300;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.recommendation-more a{
+    text-decoration: none;
+    color: $primary-500;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.recommendation-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recommendation-card {
+    flex: 1 0 calc(25% - 20px); 
+    max-width: calc(25% - 20px);
+    padding: 24px;
+    background-color: $white;
+    border-radius: 10px;
+}
+
+
+.recommendation-card-top{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.recommendation-card-top-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.recommendation-card-top-wishBtn{
+    background-color: transparent;
+    border: none;
+    color: $secondary-300;
+    
+    & .fa-heart{
+        font-size: 24px;
+    }
+}
+
+.recommendation-card-img{
+    padding: 70px 25px;
+}
 .more-btn{
     margin-right: auto;
     margin-left: auto;
@@ -124,9 +219,67 @@ main{
 .main-more{
     display: flex;
     align-items: center;
+    padding: 64px 0;
 }
 .more-link{
     color: #90A3BF;
     font-size: 14px;
     text-decoration: none;
+}
+
+// Media
+@media (max-width: 1200px) {
+    .recommendation-card, .popular-card {
+        flex: 1 0 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .recommendation-card, .popular-card {
+        flex: 1 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+    .add-card {
+        &-title, &-info{
+            line-height: normal;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .recommendation-card, .popular-card {
+        flex: 1 0 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+    .add-card {
+        flex: 1 0 100%;
+        max-width: 100%;
+
+        &-title{
+            font-size: 24px;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        &-info{
+            font-size: 12px;
+            line-height: normal;
+        }
+    }
+
+    .add-card-img{
+        margin-top: 10px;
+    }
+    .add-img {
+        width: 90%;
+    }
+    .main {
+        padding: 32px 16px 0;
+    }
+    .main-more {
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 0;
+    }
 }
