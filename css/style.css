@@ -115,6 +115,171 @@ img, picture, video, canvas, svg {
   color: #596780;
 }
 
+.popular-card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(25% - 20px);
+          flex: 1 0 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.popular-card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popular-card-top-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 5px;
+}
+
+.car-name {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.car-type {
+  color: #90a3bf;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.popular-card-top-wishBtn {
+  background-color: transparent;
+  border: none;
+  color: #90a3bf;
+}
+
+.popular-card-top-wishBtn .fa-heart {
+  font-size: 24px;
+}
+
+.popular-card-img {
+  padding: 70px 25px;
+}
+
+.car-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.car-info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  color: #90a3bf;
+}
+
+.car-price {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.price span {
+  color: #90a3bf;
+}
+
+.recommendation-card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(25% - 20px);
+          flex: 1 0 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.recommendation-card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recommendation-card-top-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 5px;
+}
+
+.recommendation-card-top-wishBtn {
+  background-color: transparent;
+  border: none;
+  color: #90a3bf;
+}
+
+.recommendation-card-top-wishBtn .fa-heart {
+  font-size: 24px;
+}
+
+.recommendation-card-img {
+  padding: 70px 25px;
+}
+
 .header {
   border: 1px solid rgba(195, 212, 233, 0.4);
   padding: 24px 32px;
@@ -139,6 +304,7 @@ img, picture, video, canvas, svg {
 }
 
 .header-desktop .header-search {
+  width: 40%;
   display: block;
   margin-left: 64px;
 }
@@ -192,6 +358,10 @@ img, picture, video, canvas, svg {
   outline: none;
 }
 
+.header-desktop .search-slider-icon {
+  margin-left: auto;
+}
+
 .header-desktop .header-action {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,7 +409,31 @@ img, picture, video, canvas, svg {
   width: 100%;
 }
 
-.header-mobile {
+.header-mobile-top {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-mobile-top .mobile-top-left {
+  font-size: 24px;
+}
+
+.header-mobile-top .mobile-account {
+  width: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header-mobile-top .mobile-account img {
+  width: 100%;
+}
+
+.header-mobile-bottom {
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -250,11 +444,11 @@ img, picture, video, canvas, svg {
   margin-top: 32px;
 }
 
-.header-mobile .header-search-mobile {
+.header-mobile-bottom .header-search-mobile {
   width: 90%;
 }
 
-.header-mobile .header-form-mobile {
+.header-mobile-bottom .header-form-mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,63 +458,64 @@ img, picture, video, canvas, svg {
   padding: 12px 24px;
 }
 
-.header-mobile .header-form-mobile input {
+.header-mobile-bottom .header-form-mobile input {
   font-size: 14px;
   color: #596780;
   border: none;
   background-color: transparent;
 }
 
-.header-mobile .header-form-mobile input::-webkit-input-placeholder {
+.header-mobile-bottom .header-form-mobile input::-webkit-input-placeholder {
   color: #596780;
   font-size: 14px;
   line-height: 21px;
 }
 
-.header-mobile .header-form-mobile input:-ms-input-placeholder {
+.header-mobile-bottom .header-form-mobile input:-ms-input-placeholder {
   color: #596780;
   font-size: 14px;
   line-height: 21px;
 }
 
-.header-mobile .header-form-mobile input::-ms-input-placeholder {
+.header-mobile-bottom .header-form-mobile input::-ms-input-placeholder {
   color: #596780;
   font-size: 14px;
   line-height: 21px;
 }
 
-.header-mobile .header-form-mobile input::placeholder {
+.header-mobile-bottom .header-form-mobile input::placeholder {
   color: #596780;
   font-size: 14px;
   line-height: 21px;
 }
 
-.header-mobile .header-form-mobile input:focus {
+.header-mobile-bottom .header-form-mobile input:focus {
   outline: none;
 }
 
-.header-mobile .mobile-filter {
+.header-mobile-bottom .mobile-filter {
   border: 1px solid rgba(195, 212, 233, 0.4);
   border-radius: 10px;
   padding: 12px;
 }
 
-.header-mobile .header-search-icon {
+.header-mobile-bottom .header-search-icon {
   width: 24px;
 }
 
 @media screen and (max-width: 768px) {
-  .header .header-mobile {
+  .header .header-mobile-top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header .action-icon {
-    display: none;
+  .header .header-mobile-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .header .action-account {
-    display: block;
-    width: 24px;
+  .header .action-item {
+    display: none;
   }
   .header .header-form {
     border-radius: 10px;
@@ -642,118 +837,6 @@ main {
   gap: 20px;
 }
 
-.popular-card {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 calc(25% - 20px);
-          flex: 1 0 calc(25% - 20px);
-  max-width: calc(25% - 20px);
-  padding: 24px;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.popular-card-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.popular-card-top-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 5px;
-}
-
-.car-name {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #1a202c;
-}
-
-.car-type {
-  color: #90a3bf;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.popular-card-top-wishBtn {
-  background-color: transparent;
-  border: none;
-  color: #90a3bf;
-}
-
-.popular-card-top-wishBtn .fa-heart {
-  font-size: 24px;
-}
-
-.popular-card-img {
-  padding: 70px 25px;
-}
-
-.car-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.car-info-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 5px;
-  color: #90a3bf;
-}
-
-.car-price {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 14px;
-}
-
-.price {
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.price span {
-  color: #90a3bf;
-}
-
 .recommendation-top {
   padding: 32px 20px 10px 20px;
   display: -webkit-box;
@@ -790,59 +873,6 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 20px;
-}
-
-.recommendation-card {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 calc(25% - 20px);
-          flex: 1 0 calc(25% - 20px);
-  max-width: calc(25% - 20px);
-  padding: 24px;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.recommendation-card-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.recommendation-card-top-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 5px;
-}
-
-.recommendation-card-top-wishBtn {
-  background-color: transparent;
-  border: none;
-  color: #90a3bf;
-}
-
-.recommendation-card-top-wishBtn .fa-heart {
-  font-size: 24px;
-}
-
-.recommendation-card-img {
-  padding: 70px 25px;
 }
 
 .more-btn {
@@ -884,6 +914,12 @@ main {
   }
   .add-card-title, .add-card-info {
     line-height: normal;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .add-card-txt {
+    width: 80%;
   }
 }
 

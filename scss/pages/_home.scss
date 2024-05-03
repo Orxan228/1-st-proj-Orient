@@ -77,78 +77,6 @@ main{
     gap: 20px;
 }
 
-.popular-card{
-    flex: 1 0 calc(25% - 20px); 
-    max-width: calc(25% - 20px);
-    padding: 24px;
-    background-color: $white;
-    border-radius: 10px;
-}
-
-.popular-card-top{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.popular-card-top-title{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 5px;
-}
-.car-name{
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 700;
-    color: $secondary-500;
-}
-.car-type{
-    color: $secondary-300;
-    font-weight: 700;
-    font-size: 14px;
-}
-.popular-card-top-wishBtn{
-    background-color: transparent;
-    border: none;
-    color: $secondary-300;
-
-    & .fa-heart{
-        font-size: 24px;
-    }
-}
-
-.popular-card-img{
-    padding: 70px 25px;
-}
-.car-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.car-info-item{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: $secondary-300;
-}
-
-.car-price{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
-}
-
-.price{
-    font-weight: 700;
-    font-size: 20px;
-    & span{
-        color: $secondary-300;
-    }
-}
 .recommendation-top{
     padding: 32px 20px 10px 20px;
     display: flex;
@@ -175,42 +103,6 @@ main{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-.recommendation-card {
-    flex: 1 0 calc(25% - 20px); 
-    max-width: calc(25% - 20px);
-    padding: 24px;
-    background-color: $white;
-    border-radius: 10px;
-}
-
-
-.recommendation-card-top{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.recommendation-card-top-title{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 5px;
-}
-.recommendation-card-top-wishBtn{
-    background-color: transparent;
-    border: none;
-    color: $secondary-300;
-    
-    & .fa-heart{
-        font-size: 24px;
-    }
-}
-
-.recommendation-card-img{
-    padding: 70px 25px;
 }
 .more-btn{
     margin-right: auto;
@@ -246,7 +138,11 @@ main{
         }
     }
 }
-
+@media screen and(max-width: 768px) {
+    .add-card-txt{
+        width: 80%;
+    }
+}
 @media (max-width: 700px) {
     .recommendation-card, .popular-card {
         flex: 1 0 calc(100% - 20px);
