@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morent</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="header-mobile-top">
+            <div class="mobile-top-left">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="mobile-top-right">
+                <a href="#">
+                    <div class="mobile-account">
+                      <img
+                        src="./assets/images/pngs/7c6c5d88e94501a481b5f732536c2851.png"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+            </div>
+        </div>
+      <div class="header-desktop">
+        <div class="header-logo">
+          <h1><a href="./index.html">MORENT</a></h1>
+        </div>
+        <div class="header-search">
+          <form class="header-form">
+            <a href="#">
+              <img
+                class="header-search-icon"
+                src="./assets/images/icons/magnifying-glass-solid.svg"
+                alt=""
+              />
+            </a>
+            <input type="text" placeholder="Search something here" />
+            <a class="search-slider-icon" href="#">
+              <img
+                class="header-search-icon slider-icon"
+                src="./assets/images/icons/sliders-solid.svg"
+                alt=""
+              />
+            </a>
+          </form>
+        </div>
+        <div class="header-action">
+          <a href="#">
+            <div class="action-item action-icon">
+              <img src="./assets/images/icons/heart-solid.svg" alt="wishlist" />
+            </div>
+          </a>
+          <a href="#">
+            <div class="action-item action-icon action-notification">
+              <div class="notification-dot"></div>
+              <img
+                src="./assets/images/icons/bell-solid.svg"
+                alt="notification"
+              />
+            </div>
+          </a>
+          <a href="#">
+            <div class="action-item action-icon">
+              <img src="./assets/images/icons/gear-solid.svg" alt="settings" />
+            </div>
+          </a>
+          <a href="#">
+            <div class="action-item action-account">
+              <img
+                src="./assets/images/pngs/7c6c5d88e94501a481b5f732536c2851.png"
+                alt=""
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="header-mobile-bottom">
+        <div class="header-search-mobile">
+          <form class="header-form-mobile">
+            <a href="#">
+              <img
+                class="header-search-icon"
+                src="./assets/images/icons/magnifying-glass-solid.svg"
+                alt=""
+              />
+            </a>
+            <input type="text" placeholder="Search something here" />
+          </form>
+        </div>
+        <div class="mobile-filter">
+          <a href="#">
+            <img
+              class="header-search-icon slider-icon"
+              src="./assets/images/icons/sliders-solid.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Main Section-->
+    <main class="categories-main">
+        <sidebar class="sidebar">
+            <h3 class="sidebar-header">TYPE</h3>
+            <form>
+                <div class="sidebar-type">
+                    <ul class="type-list">
+                        <li class="type-list-item">
+                            <input type="checkbox" name="sport">
+                            <label for="sport">Sport <span class="type-list-span">(10)</span></label>
+                        </li>
+                        <li class="type-list-item">
+                            <input type="checkbox" name="suv">
+                            <label for="suv">SUV <span class="type-list-span">(12)</span></label>
+                        </li>
+                        <li class="type-list-item">
+                            <input type="checkbox" name="mpv">
+                            <label for="mpv">MPV <span class="type-list-span">(16)</span></label>
+                        </li>
+                        <li class="type-list-item">
+                            <input type="checkbox" name="sedan">
+                            <label for="sedan">Sedan <span class="type-list-span">(20)</span></label>
+                        </li>
+                        <li class="type-list-item">
+                            <input type="checkbox" name="coupe">
+                            <label for="coupe">Coupe <span class="type-list-span">(14)</span></label>
+                        </li>
+                        <li class="type-list-item">
+                            <input type="checkbox" name="hatchback">
+                            <label for="hatchback">Hatchback <span class="type-list-span">(14)</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-capacity">
+                    <h3 class="sidebar-header">CAPACITY</h3>
+                    <ul class="capacity-list">
+                        <li class="capacity-list-item">
+                            <input type="checkbox" name="2person">
+                            <label for="2person">2 Person<span class="capacity-list-span">(10)</span></label>
+                        </li>
+                        <li class="capacity-list-item">
+                            <input type="checkbox" name="4person">
+                            <label for="4person">4 Person<span class="capacity-list-span">(14)</span></label>
+                        </li>
+                        <li class="capacity-list-item">
+                            <input type="checkbox" name="6person">
+                            <label for="6person">6 Person<span class="capacity-list-span">(12)</span></label>
+                        </li>
+                        <li class="capacity-list-item">
+                            <input type="checkbox" name="8person">
+                            <label for="8person">8 or More<span class="capacity-list-span">(16)</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-price">
+                    <h3 class="sidebar-header">PRICE</h3>
+                    
+                </div>
+            </form>
+        </sidebar>
+        <div class="with-sidebar"></div>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-top-left">
+            <h2 class="footer-logo">
+              <a href="./index.html">MORENT</a>
+            </h2>
+            <div class="footer-logo-txt">
+              <p>
+                Our vision is to provide convenience and help increase your sales
+                business.
+              </p>
+            </div>
+          </div>
+          <div class="footer-top-right">
+            <div class="footer-list">
+              <h3><a href="#">About</a></h3>
+              <p><a href="#">How it works</a></p>
+              <p><a href="#">Featured</a></p>
+              <p><a href="#">Partnership</a></p>
+              <p><a href="#">Bussiness Relation</a></p>
+            </div>
+            <div class="footer-list">
+              <h3><a href="#">Community</a></h3>
+              <p><a href="#">Events</a></p>
+              <p><a href="#">Blog</a></p>
+              <p><a href="#">Podcast</a></p>
+              <p><a href="#">Invite a friend</a></p>
+            </div>
+            <div class="footer-list">
+              <h3><a href="#">Socials</a></h3>
+              <p><a href="#">Discord</a></p>
+              <p><a href="#">Instagram</a></p>
+              <p><a href="#">Twitter</a></p>
+              <p><a href="#">Facebook</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <h5>©2022 MORENT. All rights reserved</h5>
+          </div>
+          <div class="footer-bottom-right">
+            <a href="#">Privacy & Policy</a>
+            <a href="#">Terms & Condition</a>
+          </div>
+        </div>
+      </footer>
+  
+</body>
+</html>
