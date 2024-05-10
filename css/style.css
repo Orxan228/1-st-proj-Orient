@@ -762,4 +762,20 @@ ul, ol, li {
 }
 .sidebar .sidebar-price {
   margin-top: 32px;
+}
+.sidebar .range-max {
+  display: flex;
+  align-items: center;
+  color: #596780;
+  font-size: 20px;
+  font-weight: 600;
+}
+.sidebar .range {
+  margin-top: 28px;
+}
+.sidebar .range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 50%;
+  color: #3563e9;
+  outline: 3px solid white;
 }/*# sourceMappingURL=style.css.map */
